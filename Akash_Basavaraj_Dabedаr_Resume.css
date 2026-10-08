@@ -1,0 +1,127 @@
+/* Akash Basavaraj Dabedar - Professional Resume CSS */
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #eef1f5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+.resume {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 20px auto;
+  background: #fff;
+  padding: 18mm 17mm;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+header {
+  border-bottom: 2px solid #222;
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  margin: 0 0 5px;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.role {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+.contact {
+  font-size: 12px;
+  color: #444;
+}
+
+section {
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 5px;
+  margin: 0 0 8px;
+}
+
+p,
+li {
+  font-size: 11.5px;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 5px 0 0 18px;
+  padding: 0;
+}
+
+.education-title,
+.career-title {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 35px;
+}
+
+.personal p {
+  margin-bottom: 4px;
+}
+
+.declaration {
+  margin-top: 5px;
+}
+
+.signature {
+  margin-top: 22px;
+  font-weight: bold;
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .resume {
+    margin: 0;
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .resume {
+    width: 100%;
+    min-height: auto;
+    margin: 0;
+    padding: 30px;
+    box-shadow: none;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
